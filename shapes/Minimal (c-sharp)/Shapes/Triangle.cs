@@ -7,8 +7,12 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    class Triangle
+    public class Triangle
     {
+        public Point Point1 { get; private set; }
+        public Point Point2 { get; private set; }
+        public Point Point3 { get; private set; }
+
         public Line Line1 { get; private set; }
         public Line Line2 { get; private set; }
         public Line Line3 { get; private set; }
@@ -24,6 +28,10 @@ namespace Shapes
         */
         public Triangle(double x1, double y1, double x2, double y2, double x3, double y3)
         {
+            Point1 = new Point(x1, y1);
+            Point2 = new Point(x2, y2);
+            Point3 = new Point(x3, y3);
+
             Line1 = new Line(x1, y1, x2, y2);
             Line2 = new Line(x2, y2, x3, y3);
             Line3 = new Line(x3, y3, x1, y1);
@@ -46,6 +54,10 @@ namespace Shapes
             Line1 = new Line(point1, point2);
             Line2 = new Line(point2, point3);
             Line3 = new Line(point3, point1);
+
+            Point1 = point1;
+            Point2 = point2;
+            Point3 = point3;
 
             ValidateTriangle();
         }
