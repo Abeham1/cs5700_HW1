@@ -46,6 +46,8 @@ namespace Shapes
             Line1 = new Line(point1, point2);
             Line2 = new Line(point2, point3);
             Line3 = new Line(point3, point1);
+
+            ValidateTriangle();
         }
 
         /**
