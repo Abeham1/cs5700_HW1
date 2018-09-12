@@ -119,13 +119,5 @@ namespace ShapesTests
             myLine = new Line(2, 2, 2, 2);
             Assert.IsTrue(double.IsNaN(myLine.ComputeSlope()));
         }
-
-        [TestMethod]
-        [ExpectedException(typeof(ShapeException),
-            "Line cannot have length of zero")]
-        public void TestValidateLine()
-        {
-            var myLine = new Line(0, 0, 0, 0);
-        }
     }
 }

@@ -20,8 +20,6 @@ namespace Shapes
         {
             Point1 = new Point(x1, y1);
             Point2 = new Point(x2, y2);
-
-            ValidateLine();
         }
 
         /**
@@ -38,8 +36,6 @@ namespace Shapes
 
             Point1 = point1;
             Point2 = point2;
-
-            ValidateLine();
         }
 
         /**
@@ -54,7 +50,6 @@ namespace Shapes
         {
             Point1.Move(deltaX, deltaY);
             Point2.Move(deltaX, deltaY);
-            ValidateLine();
         }
 
         /**
@@ -78,7 +73,7 @@ namespace Shapes
          */
         public void ValidateLine()
         {
-            if (this.Point1.X == this.Point2.X && this.Point1.Y == this.Point2.Y)
+            if (Point1.X == Point2.X && Point1.Y == Point2.Y)
                 throw new ShapeException("Line cannot have length of zero");
         }
     }
