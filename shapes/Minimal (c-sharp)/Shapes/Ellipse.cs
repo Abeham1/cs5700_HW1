@@ -8,11 +8,11 @@ namespace Shapes
 {
     class Ellipse
     {
-        public Point Center { get; private set; }
+        public Point Center { get; protected set; }
         public Point Foci1 { get; private set; }
         public Point Foci2 { get; private set; }
-        public double verticalRadius { get; private set; }
-        public double horizontalRadius { get; private set; }
+        public double verticalRadius { get; protected set; }
+        public double horizontalRadius { get; protected set; }
 
         /**
          * Constructor with x-y Location for center
