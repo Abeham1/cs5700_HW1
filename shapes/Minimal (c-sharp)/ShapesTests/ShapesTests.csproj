@@ -58,6 +58,7 @@
     <Compile Include="PointTest.cs" />
     <Compile Include="RectangleTest.cs" />
     <Compile Include="ShapeExeptionTest.cs" />
+    <Compile Include="SquareTest.cs" />
     <Compile Include="TriangleTest.cs" />
     <Compile Include="ValidatorTest.cs" />
   </ItemGroup>

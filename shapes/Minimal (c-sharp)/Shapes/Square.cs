@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    class Square
+    public class Square
     {
         public Line Line1 { get; private set; }
         public Line Line2 { get; private set; }
